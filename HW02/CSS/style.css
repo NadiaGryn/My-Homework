@@ -1,3 +1,247 @@
-body {
-    max-width: 1280px;
+section {
+    width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/*Ramda logo*/
+
+.Logo {
+    text-decoration: none;
+    color: #000 !important;
+}
+.Logo:hover {
+    font-size: 55px;
+}
+header {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 1280px;
+    height: 69px;
+    margin: 15px 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: black;
+}
+.mda {
+    color: #4bcaff;
+    margin-left: -22px;
+}
+/*navbar-menu, !make:hover*/
+ .nav-top {
+    display: block;
+    box-sizing: border-box;
+    width: 1280px;
+    height: 69px;
+    margin: 20px 37px 20px 45px;
+    background-color: #35444feb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+   } 
+.fank {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 30px 0 135px;
+    padding: 22px 15px;
+}
+.fank:hover {
+    background-color: #222f3a;
+    border: 0.5px solid;
+    border-style: none solid;
+    border-color: white;
+    padding: auto;
+}
+.rmd {
+    color: white;
+    text-decoration: none;
+    padding: 22px 46px;
+}
+.rmd:hover {
+    background-color: #222f3a;
+    border: 0.5px solid;
+    border-style: none solid;
+    border-color: white;
+    padding: auto;
+}
+.fant {
+    color: white;
+    text-decoration: none;
+    padding: 22px 43px;
+}
+.fant:hover {
+    background-color: #222f3a;
+    border: 0.5px solid;
+    border-style: none solid;
+    border-color: white;
+    padding: auto;
+}
+.node {
+    color: white;
+    text-decoration: none;
+    padding: 22px 44px;
+}
+.node:hover {
+    background-color: #222f3a;
+    border: 0.5px solid;
+    border-style: none solid;
+    border-color: white;
+    padding: auto;
+}
+/*main content with aside, image, p*/
+.content {
+    margin-left: 46px;
+    display: inline-block;
+    text-align: right;
+    width: 1280px;
+    box-sizing: border-box;
+}
+.aside {
+    width: 344px;
+    height: 399px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 21px;
+    border: 1px solid #495863ad;
+    margin-right: 55px;
+    margin-top: 30px;
+    float: left;
+ }
+.row1 {
+    display: block;
+    padding: 25px 35px;
+    text-align: left;
+    color: #485863;
+    text-decoration: none;
+}
+.row1:hover {
+    color: black;
+    background-color: #dbdbdb;
+    text-align: center;
+}
+.row2 {
+    display: block;
+    padding: 25px 35px;
+    text-align: left;
+    color: #485863;
+    text-decoration: none;
+}
+.row2:hover {
+    color: black;
+    background-color: #dbdbdb;
+    text-align: center;
+}
+.row3 {
+    display: block;
+    padding: 25px 35px;
+    text-align: left;
+    color: #485863;
+    text-decoration: none;
+}
+.row3:hover {
+    color: black;
+    background-color: #dbdbdb;
+    text-align: center;
+}
+.row4 {
+    display: block;
+    padding: 25px 35px;
+    text-align: left;
+    color: #485863;
+    text-decoration: none;
+}
+.row4:hover {
+    color: black;
+    background-color: #dbdbdb;
+    text-align: center;
+}
+.row5 {
+    display: block;
+    padding: 25px 35px 45px;
+    text-align: left;
+    color: #485863;
+    text-decoration: none;
+}
+.row5:hover {
+    color: black;
+    background-color: #dbdbdb;
+    text-align: center;
+}
+.goat {
+    padding: 61px 278px 0px;
+    height: 470px;
+    display: inline-block;
+    border: 1px solid #495863ad;
+    margin-top: 30px;
+}
+.goat-img {
+    width: 320px;
+    height: 381px;
+}
+.text {
+    right: 130px;
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: bold;
+    color: #282828;
+    text-align: left;
+    padding-left: 441px;
+    margin: 35px auto;
+}
+.p1 {
+    width: 800px;
+    top: 30px;
+    right: 60px;
+    bottom: 30px;
+    left: 520px;      
+}
+.p2 {
+    width: 800px;
+    top: 150px;
+    right: 60px;
+    bottom: 30px;
+    left: 520px;      
+}
+/*Navbar footer*/
+footer {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 1280px;
+    height: 69px;
+    margin: 15px 40px;
+    padding: 20px;
+    background-color: #b4b7ba;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+.row1footer {
+    text-decoration: none;
+    color: #000;
+    margin: 0 5px 0 90px;
+    padding: 22px 15px;
+}
+.row2footer {
+    color: #3181a6;
+    margin-left: 20px;
+}
+.row3footer {
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+}
+.row4footer {
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+}
+.row5footer {
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+}
+.row6footer {
+    text-decoration: none;
+    color: #000;
+    float: right;
+    margin-right: 15px;
 }

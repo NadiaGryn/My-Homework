@@ -1,0 +1,86 @@
+.Mainsection {
+    margin: 0 auto;
+    /* padding: 0;  как на макете*/
+    width: 1366px;
+    height: 768px;
+    background-image: url("../Images/MilanoBkgrnd.png");
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: hue;
+    box-sizing: border-box;
+
+}
+
+.header {
+    font-family: veranda, sans-serif;
+    font-weight: bold;
+}
+.minipicture {
+    background-image: url("../Images/logo.png");
+    margin-top: 45px;
+    width: 49px;
+    height: 44px;
+    float: left;
+}
+.first-line-header {
+    margin-left: 15px;
+    margin-top: 45px;
+}
+.bigmilan {
+    display: block;
+    margin-left: 45px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.mail {
+    display: block;
+    margin-left: 45px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;  
+}
+.second-line-header {
+    margin-left: 15px;
+    margin-top: 45px;
+}
+.holidays {
+    display: block;
+    margin-left: 45px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+.phone {
+    display: block;
+    margin-left: 45px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px; 
+}
+.photomenu {
+    margin: 20px 130px;
+}
+.list-of-photos {
+    float: left;
+    list-style: none;
+    text-align: center;
+    margin: 5px;
+}
+.txt-shopping, .txt-sightseeing, .txt-food, .txt-bars, .txt-art, .txt-walking {
+    margin: 10px 40px 20px 40px;
+    color: white;
+    font-size: 17px;
+    /* border-top: white; */
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer {
+    color: white;
+    width: 349px;
+    height: 12px;
+}
