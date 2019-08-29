@@ -13,7 +13,7 @@
 .header {
     width: 1266px;
     box-sizing: border-box;
-    padding: 1px 85px 1px 145px;
+    padding: 1px 63px 1px 163px;
     font-family: veranda, sans-serif;
     font-weight: bold;
 }
@@ -49,11 +49,12 @@
     float: right;
     margin: 50px 0 0 0;
 }
-.header-right-side:hover{
+.header-left-side:hover{
     color: #f26522;
 }
 .header-left-side {
     float: left;
+    text-decoration: none;
 }
 .mail {
     display: block;
@@ -64,7 +65,7 @@
 }
 .phone {
     display: block;
-    margin: 2px 0 0 45px;
+    margin: 2px 0 0 129px;
     color: #ffffff;
     text-decoration: none;
     font-size: 17px; 
@@ -78,31 +79,42 @@
 .card-shopping {
     float: left;
     margin-right: 55px;
+    margin-left: 16px;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
 }
 .card-sightseeing{
     float: left;
     margin-right: 55px;
     position: relative;
+    text-decoration: none;
 }
 .card-food{
     float: left;
     position: relative;
+    text-decoration: none;
 }
 .card-bars {
     float: left;
     margin-right: 55px;
+    margin-left: 16px;
     position: relative;
+    text-decoration: none;
+    margin-top: 30px;
 }
 .card-art {
     float: left;
     margin-right: 55px;
     position: relative;
+    text-decoration: none;
+    margin-top: 30px;
 }
 .card-walk{
     float: left;
     position: relative;
+    text-decoration: none;
+    margin-top: 30px;
 }
 .card-txt{
     color: #ffffff;
@@ -150,7 +162,7 @@ footer {
     clear: both;
     top: 60px;
     text-align: center;
-    padding: 64px 0 0 0;
+    padding: 43px 0 0 0;
 }
 .card-txt:hover {
     color: #f26522;
