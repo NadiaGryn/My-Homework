@@ -78,24 +78,31 @@
 .card-shopping {
     float: left;
     margin-right: 55px;
+    position: relative;
+    overflow: hidden;
 }
 .card-sightseeing{
     float: left;
     margin-right: 55px;
+    position: relative;
 }
 .card-food{
     float: left;
+    position: relative;
 }
 .card-bars {
     float: left;
     margin-right: 55px;
+    position: relative;
 }
 .card-art {
     float: left;
     margin-right: 55px;
+    position: relative;
 }
 .card-walk{
     float: left;
+    position: relative;
 }
 .card-txt{
     color: #ffffff;
@@ -104,10 +111,12 @@
     text-decoration: none;
     text-align: center;
 }
-.card-hover {
+.card-hover-shop, .card-hover-sightseeing, .card-hover-food, .card-hover-bars, .card-hover-art, .card-hover-walk  {
     background-color: #f26522;
-    width: 312px;
+    width: 308px;
     height: 63px;
+    position: absolute;
+    top: 146px;
 }
 .from {
     color: #ffffff;
@@ -135,10 +144,14 @@
     display: inline-block;
     margin: 0 0 8px 116px;
 }
-
-
 footer {
+    display: block;
     color: white;
-    width: 349px;
-    height: 12px;
+    clear: both;
+    top: 60px;
+    text-align: center;
+    padding: 64px 0 0 0;
+}
+.card-txt:hover {
+    color: #f26522;
 }
