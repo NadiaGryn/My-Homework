@@ -1,6 +1,6 @@
 .Mainsection {
-    margin: 0 auto;
     /* padding: 0;  как на макете*/
+    margin: 0 auto;
     width: 1366px;
     height: 768px;
     background-image: url("../Images/MilanoBkgrnd.png");
@@ -8,77 +8,135 @@
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: hue;
     box-sizing: border-box;
-
+    text-decoration: none;
 }
-
 .header {
+    width: 1266px;
+    box-sizing: border-box;
+    padding: 1px 85px 1px 145px;
     font-family: veranda, sans-serif;
     font-weight: bold;
 }
 .minipicture {
     background-image: url("../Images/logo.png");
-    margin-top: 45px;
+    margin: 45px 0 15px 0;
     width: 49px;
     height: 44px;
     float: left;
 }
-.first-line-header {
+.milano-holidays {
     margin-left: 15px;
-    margin-top: 45px;
 }
 .bigmilan {
-    display: block;
-    margin-left: 45px;
+    display: inline-block;
+    margin: 0 0 0 15px;
+    padding: 40px 0 0 0;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 30px;
+}
+.holidays {
+    display: block;
+    margin: 0;
+    padding: 0 0 0 53px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.header-right-side {
+    float: right;
+    margin: 50px 0 0 0;
+}
+.header-right-side:hover{
+    color: #f26522;
+}
+.header-left-side {
+    float: left;
 }
 .mail {
     display: block;
-    margin-left: 45px;
+    margin: 0 0 0 45px;
     color: #ffffff;
     text-decoration: none;
     font-size: 17px;  
 }
-.second-line-header {
-    margin-left: 15px;
-    margin-top: 45px;
-}
-.holidays {
-    display: block;
-    margin-left: 45px;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 19px;
-}
 .phone {
     display: block;
-    margin-left: 45px;
+    margin: 2px 0 0 45px;
     color: #ffffff;
     text-decoration: none;
     font-size: 17px; 
 }
-.photomenu {
-    margin: 20px 130px;
+.cards{
+    clear: both;
+    margin: 0 auto;
+    padding: 36px 0 0 0;
+    width: 1063px;
 }
-.list-of-photos {
+.card-shopping {
     float: left;
-    list-style: none;
-    text-align: center;
-    margin: 5px;
+    margin-right: 55px;
 }
-.txt-shopping, .txt-sightseeing, .txt-food, .txt-bars, .txt-art, .txt-walking {
-    margin: 10px 40px 20px 40px;
-    color: white;
+.card-sightseeing{
+    float: left;
+    margin-right: 55px;
+}
+.card-food{
+    float: left;
+}
+.card-bars {
+    float: left;
+    margin-right: 55px;
+}
+.card-art {
+    float: left;
+    margin-right: 55px;
+}
+.card-walk{
+    float: left;
+}
+.card-txt{
+    color: #ffffff;
+    font-family: veranda, sans-serif;
     font-size: 17px;
-    /* border-top: white; */
-    text-align: center;
     text-decoration: none;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
+.card-hover {
+    background-color: #f26522;
+    width: 312px;
+    height: 63px;
+}
+.from {
+    color: #ffffff;
+    font-family: veranda, sans-serif;
+    font-size:10pt;
+    text-decoration: none;
+    text-align: left;
+    margin: 0 auto;
+    padding: 16px 25px 2px 25px;
+}
+.price {
+    color: #ffffff;
+    font-family: veranda, sans-serif;
+    font-size:20px;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0 25px 0 25px;
+    display: inline-block;
+}
+.details{
+    color: #ffffff;
+    font-family: veranda, sans-serif;
+    font-size:15px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0 8px 116px;
+}
+
+
 footer {
     color: white;
     width: 349px;
