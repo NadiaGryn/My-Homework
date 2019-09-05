@@ -5,7 +5,7 @@ body {
 }
 header {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 75px;
+    height: 60px;
     padding-top: 1px;
 }
 .journey {
@@ -14,19 +14,191 @@ header {
     font-weight: bold;
     color: #ffffff;
     margin: 0 auto;
-    padding: 23px 0 0 167px;
+    padding: 15px 0 0 155px;
     float: left;
+    transition: color 0.4s linear;
 }
+.journey:hover {
+    color: #44b077;
+    
+}
+.header-right::before {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #5a5856;
+    margin-left: 45px;
+}    
+
 .header-right {
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
     text-align: right;
     float: right;
-    padding: 29px 100px 0 0;
+    padding: 21px 120px 0 0;
     margin: 0 auto;
 }
-.linl-log {
+.link-log {
     color: #44b077;
     text-decoration: none;
+}
+.sprite {
+  width: 122px;
+  height: 33px;
+  background: url("../Images/sprites.png") no-repeat;
+  margin-left: 892px;  
+  margin-top: 12px;
+  transition: background-color 0.4s linear;
+}
+.sprite:hover {
+   width: 122px;
+   height: 33px;
+   background: url("../Images/green_sprites.png") no-repeat;
+   position: absolute;
+   left: 911px;
+   top: 11px;
+   } 
+
+.form {
+    width: 444px;
+    height: 584px;
+    background: #ffffff;
+    border-radius: 16px;
+    margin: 82px auto;
+    top: calc(50% - 748/2);
+    bottom: calc(50% - 748/2);
+}
+.form-head {
+    position: relative;
+ }
+.green-box {
+    width: 18px;
+    height: 18px;
+    background-color: #44b077;
+    position: absolute;
+    top: 26px;
+}
+.form-head-sign {
+    font-family: veranda, sans-serif;
+    font-size: 20px;
+    color: #696969;
+    margin: 0 auto;
+    position: absolute;
+    left: 46px;
+    top: 24px;
+}
+.greenLink {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #44b077;
+    position: absolute;
+    top: 28px;
+    right: 55px;
+}
+.btn-social {
+    padding: 70px 50px 15px 50px;
+}
+.button-name {
+    color: white;
+    text-decoration: none;
+    font-family: veranda sans-serif;
+    font-size: 20px;
+    padding-left: 15px;
+}
+.btn-facebook {
+    background-color: #264b96;
+    width: 169px;
+    height: 46px;
+    border-radius: 5px;
+    border-width: 0;
+}
+.fb-logo {
+    float: left;
+    padding-left: 9px;
+    padding-top: 3px;
+} 
+.btn-gmail {
+    background-color: #c3412c;
+    width: 169px;
+    height: 46px;
+    border-radius: 5px;
+    border-width: 0;
+    float: right;
+}
+.gmail-logo {
+    float: left;
+    padding-left: 9px;
+    padding-top: 3px;
+}
+/* .gmail-logo::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: black;
+} */
+.lines-or {
+   color: #848484;
+   text-align: center;
+   font-family: veranda, sans-serif;
+   font-size: 15px;
+}
+.lines-or::before {
+    content: "\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\00A0\00A0";
+    width: 135px;
+    height: 1px;
+    color: #eaeaea;
+}
+.lines-or::after {
+    content: "\00A0\00A0\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014";
+    width: 135px;
+    height: 1px;
+    color: #eaeaea;
+}
+.inputText {
+    width: 322px;
+    height: 46px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    color: #5c5c5c;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    margin-bottom: 17px;
+    margin-left: 53px;
+    padding: 1px 1px 1px 16px;
+    box-shadow: 0 4px 10px 0 rgba(32, 33, 36, .28);
+}
+.label {
+    color: #848484;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
+.inputText:focus {
+    outline: none;
+}
+.checkbox-container {
+    padding: 20px 55px;
+}
+.submit {
+width: 336px;
+height: 46px;
+background-color: #329a65;
+color: #ffffff;
+border-radius: 5px;
+border-width: 0;
+font-size: 18px;
+padding: 0 auto;
+margin-left: 60px;
+}
+.terms-conditions {
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 0.5px;
+font-size: 16px;
+color: #44b077;
+text-decoration: none;
 }

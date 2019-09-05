@@ -28,8 +28,10 @@
     text-transform: uppercase;
     font-size: 30px;
 }
-.header-left-side:hover .logo{
-    background-image: url("../Images/logo_orange.png");
+
+.logo:hover {
+   content: url("../Images/logo_orange.png");
+   transition: 1s;
 }
 .milano-holidays {
     display: inline-block;
@@ -41,6 +43,7 @@
 }
 .milano-holidays:hover{
     color: #f26522;
+    transition: 1s;
 }
 .holidays {
     display: block;
@@ -51,6 +54,7 @@
 }
 .holidays:hover{
     color: #f26522;
+    transition: 1s;
 }
 .header-right-side {
     float: right;
@@ -114,6 +118,7 @@
     position: absolute;
     bottom: 0px;
     z-index: 9999;
+    transition: 1s;
 }
 .from {
     color: #ffffff;
