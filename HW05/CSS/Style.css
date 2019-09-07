@@ -7,30 +7,31 @@ body {
     height: 726px;
     border: 15px solid #3a4965;
     border-collapse: collapse;
-    border-spacing: 1px;
     background-color: white;
     font-family: 'Arimo', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     margin: 50px auto;
     text-align: center;
+}
+table, tr, td {
+    border: 2px solid #cacaca;
     vertical-align: middle;
+    color: #484848;
 }
-.row1-2-col1 {
-    width: 310px;
-    font-size: 18px;
-    padding: 40px auto;
-}
-.pricing-plan {
-    font-size: 25px;
+.row1-col1 {
+    font-size:16px;
+    vertical-align: bottom;
 }
 .row1-col2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 277px;
     color: white;
     font-size: 20px;
     background-color: #89c331;
-    padding: 20px auto;
 }
+
 .row1-col3 {
     width: 277px;
     color: white;
@@ -39,10 +40,88 @@ body {
     padding: 20px auto;
 }
 .row1-col4 {
-    width: 277px;
+    width: 275px;
     color: white;
     font-size: 20px;
     background-color: #20807c;
     padding: 20px auto;
 }
-.row2-col2 
+.row2-col1 {
+    font-size:25px;
+    vertical-align: top;
+    border-top-color: white;
+}
+.dollars {
+    font-size: 57px;
+    float: left;
+    padding-left: 26px;
+}
+.cents {
+    font-size: 24px;
+    float: left;
+    padding-right: 94px;
+}
+.per-m {
+    font-size: 21px;
+    float: left;
+    padding-left: 5px;
+}
+i {
+    padding-right: 10px;
+}
+.row3, .row5, .row7 {
+    background-color: #f2f2f2;
+    color: #939393;
+}
+.row4, .row6, .row8 {
+    background-color: #e3e3e3;
+}
+.tfoot-col1:hover, .tfoot-col2:hover, .tfoot-col3:hover, .tfoot-col4:hover {
+    background-color: #dddddd;
+}
+
+.btn-contact {
+    width: 192px;
+    height: 49px;
+    background-color: #484848;
+    border-radius: 8px;
+    border-bottom: 5px solid #404040;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 20px auto;
+}
+.btn-standard {
+    width: 192px;
+    height: 49px;
+    background-color: #89c331;
+    border-radius: 8px;
+    border-bottom: 5px solid #79b027;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn-ultimate {
+    width: 192px;
+    height: 49px;
+    background-color: #f04a56;
+    border-radius: 8px;
+    border-bottom: 5px solid #df3a46;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn-premium {
+    width: 192px;
+    height: 49px;
+    background-color: #20807c;
+    border-radius: 8px;
+    border-bottom: 5px solid #16736f;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
