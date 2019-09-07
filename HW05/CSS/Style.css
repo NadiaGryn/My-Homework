@@ -18,16 +18,31 @@ body {
 }
 .row1-2-col1 {
     width: 310px;
-    height: 156px;
     font-size: 18px;
+    padding: 40px auto;
 }
-
-.row1-col2 {
-    width: 277px;
-    height: 70px;
-    color: white;
-    background-color: #89c331;
-}
-.row2-col {
+.pricing-plan {
     font-size: 25px;
 }
+.row1-col2 {
+    width: 277px;
+    color: white;
+    font-size: 20px;
+    background-color: #89c331;
+    padding: 20px auto;
+}
+.row1-col3 {
+    width: 277px;
+    color: white;
+    font-size: 25px;
+    background-color: #f04a56;
+    padding: 20px auto;
+}
+.row1-col4 {
+    width: 277px;
+    color: white;
+    font-size: 20px;
+    background-color: #20807c;
+    padding: 20px auto;
+}
+.row2-col2 

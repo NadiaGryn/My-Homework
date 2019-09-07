@@ -22,6 +22,7 @@ header {
     font-weight: bold;
     color: #ffffff;
     margin-left: 238px;
+    margin-right: 559px;
     padding-top: 17px;
     transition: color 0.4s linear;
 }
@@ -52,46 +53,48 @@ header {
   width: 125px;
   height: 30px;
   background: url("../Images/css_sprites.png");
-  margin-left: 535px;
 }
-.sprite.icon-calc {
+.icon-calc {
+    width: 19px; 
+    height: 19px;
+    margin-right: 15px;
+    background: url("../Images/css_sprites.png");
+    background-position: -15px -15px;
+    transition: color 1s linear;
+}
+.icon-calc:hover {
     width: 19px; 
     height: 19px;
     background: url("../Images/css_sprites.png");
-    background-position: -10px -10px;
+    background-position: -64px -15px;
 }
-.sprite.icon-calc:hover {
-    width: 19px; 
-    height: 19px;
+.icon-message {
+    width: 28px; 
+    height: 20px;
+    margin-right: 15px;
     background: url("../Images/css_sprites.png");
-    background-position: -49px -10px;
-    transition: all 0.4s linear;
+    background-position: -213px -15px;
+    transition: color 1s linear;
 }
-.sprite.icon-message {
+.icon-message:hover {
     width: 28px; 
     height: 20px;
     background: url("../Images/css_sprites.png");
-    background-position: -168px -10px;
+    background-position: -271px -15px;
 }
-.sprite.icon-message:hover {
-    width: 28px; 
+.icon-compas {
+    width: 20px; 
     height: 20px;
+    margin-right: 15px;
     background: url("../Images/css_sprites.png");
-    background-position: -216px -10px;
-    transition: all 0.4s linear;
+    background-position: -163px -15px;
+    transition: color 1s linear;
 }
-.sprite.icon-compas {
+.icon-compas:hover {
     width: 20px; 
     height: 20px;
     background: url("../Images/css_sprites.png");
-    background-position: -10px -50px;
-}
-.sprite.icon-compas:hover {
-    width: 20px; 
-    height: 20px;
-    background: url("../Images/css_sprites.png");
-    background-position: -10px -50px;
-    transition: all 0.4s linear;
+    background-position: -113px -15px;
 }
 
             /* FORM */
@@ -178,7 +181,7 @@ header {
    text-align: center;
    font-family: veranda, sans-serif;
    font-size: 15px;
-   padding-bottom: 10px;
+   padding: 15px 0 15px 0;
 }
 .lines-or::before {
     content: "\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\00A0\00A0";
