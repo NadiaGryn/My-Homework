@@ -1,0 +1,33 @@
+body {
+    background-color: #404040;
+}
+.main-table {
+    display: table;
+    width: 1182px;
+    height: 726px;
+    border: 15px solid #3a4965;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    background-color: white;
+    font-family: 'Arimo', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 50px auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.row1-2-col1 {
+    width: 310px;
+    height: 156px;
+    font-size: 18px;
+}
+
+.row1-col2 {
+    width: 277px;
+    height: 70px;
+    color: white;
+    background-color: #89c331;
+}
+.row2-col {
+    font-size: 25px;
+}

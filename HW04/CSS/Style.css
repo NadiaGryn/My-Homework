@@ -1,26 +1,39 @@
 body {
-    background-size: 100%;
+    width: 100%;
+    /* height: 100vh; */
+    background-position: center;
+    background-size: cover;
     background-image: url("../Images/background.png");
+    background-repeat: no-repeat;
     margin: 0 auto;
-}
+ }
 header {
     background-color: rgba(0, 0, 0, 0.5);
     height: 60px;
+    width: 100%;
     padding-top: 1px;
 }
 .journey {
+    width: 105px;
+    height: 15px;
+    display: inline-block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     font-weight: bold;
     color: #ffffff;
-    margin: 0 auto;
-    padding: 15px 0 0 155px;
-    float: left;
+    margin-left: 238px;
+    padding-top: 17px;
     transition: color 0.4s linear;
 }
 .journey:hover {
     color: #44b077;
-    
+}
+  
+.header-right {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    display: inline-block;
 }
 .header-right::before {
     display: inline-block;
@@ -28,47 +41,67 @@ header {
     width: 1px;
     height: 20px;
     background-color: #5a5856;
-    margin-left: 45px;
-}    
-
-.header-right {
-    color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-    text-align: right;
-    float: right;
-    padding: 21px 120px 0 0;
-    margin: 0 auto;
-}
+    margin-left: 15px;
+}  
 .link-log {
     color: #44b077;
     text-decoration: none;
 }
 .sprite {
-  width: 122px;
-  height: 33px;
-  background: url("../Images/sprites.png") no-repeat;
-  margin-left: 892px;  
-  margin-top: 12px;
-  transition: background-color 0.4s linear;
+  display: inline-block;
+  width: 125px;
+  height: 30px;
+  background: url("../Images/css_sprites.png");
+  margin-left: 535px;
 }
-.sprite:hover {
-   width: 122px;
-   height: 33px;
-   background: url("../Images/green_sprites.png") no-repeat;
-   position: absolute;
-   left: 911px;
-   top: 11px;
-   } 
+.sprite.icon-calc {
+    width: 19px; 
+    height: 19px;
+    background: url("../Images/css_sprites.png");
+    background-position: -10px -10px;
+}
+.sprite.icon-calc:hover {
+    width: 19px; 
+    height: 19px;
+    background: url("../Images/css_sprites.png");
+    background-position: -49px -10px;
+    transition: all 0.4s linear;
+}
+.sprite.icon-message {
+    width: 28px; 
+    height: 20px;
+    background: url("../Images/css_sprites.png");
+    background-position: -168px -10px;
+}
+.sprite.icon-message:hover {
+    width: 28px; 
+    height: 20px;
+    background: url("../Images/css_sprites.png");
+    background-position: -216px -10px;
+    transition: all 0.4s linear;
+}
+.sprite.icon-compas {
+    width: 20px; 
+    height: 20px;
+    background: url("../Images/css_sprites.png");
+    background-position: -10px -50px;
+}
+.sprite.icon-compas:hover {
+    width: 20px; 
+    height: 20px;
+    background: url("../Images/css_sprites.png");
+    background-position: -10px -50px;
+    transition: all 0.4s linear;
+}
+
+            /* FORM */
 
 .form {
     width: 444px;
     height: 584px;
     background: #ffffff;
     border-radius: 16px;
-    margin: 82px auto;
-    top: calc(50% - 748/2);
-    bottom: calc(50% - 748/2);
+    margin: 50px auto;
 }
 .form-head {
     position: relative;
@@ -145,6 +178,7 @@ header {
    text-align: center;
    font-family: veranda, sans-serif;
    font-size: 15px;
+   padding-bottom: 10px;
 }
 .lines-or::before {
     content: "\2014\2014\2014\2014\2014\2014\2014\2014\2014\2014\00A0\00A0";
@@ -172,33 +206,66 @@ header {
     padding: 1px 1px 1px 16px;
     box-shadow: 0 4px 10px 0 rgba(32, 33, 36, .28);
 }
-.label {
-    color: #848484;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.5px;
-    font-size: 16px;
+input::placeholder {
+    color: #bebebe;
 }
+
 .inputText:focus {
     outline: none;
 }
 .checkbox-container {
     padding: 20px 55px;
+    /* position: relative; */
+    /* top: 12px;
+    left: 44px; */
+}
+.label-chkbx {
+    color: #848484;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    padding-left: 7px;
+}
+/* .checkbox-input {
+    display: none;
+}
+.label-chkbx::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.label-chkbx::after {
+    content: "";
+    display: block;
+    width: 16px;
+    background: url(../Images/check.png) none;
+    background-size: 16px 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+} */
+.terms-conditions a  {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    color: #44b077;
 }
 .submit {
-width: 336px;
-height: 46px;
-background-color: #329a65;
-color: #ffffff;
-border-radius: 5px;
-border-width: 0;
-font-size: 18px;
-padding: 0 auto;
-margin-left: 60px;
-}
-.terms-conditions {
-font-family: Arial, Helvetica, sans-serif;
-letter-spacing: 0.5px;
-font-size: 16px;
-color: #44b077;
-text-decoration: none;
-}
+    width: 336px;
+    height: 46px;
+    background-color: #329a65;
+    color: #ffffff;
+    border-radius: 5px;
+    border-width: 0;
+    font-size: 18px;
+    padding: 0 auto;
+    margin-left: 60px;
+    }
