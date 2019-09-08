@@ -141,8 +141,16 @@ header {
     color: white;
     text-decoration: none;
     font-family: veranda sans-serif;
-    font-size: 20px;
-    padding-left: 15px;
+    font-size: 21px;
+    vertical-align: bottom;
+}
+.btn-facebook .button-name::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 24px;
+    background-color: #224387;
+    margin-right: 20px;
 }
 .btn-facebook {
     background-color: #264b96;
@@ -155,7 +163,15 @@ header {
     float: left;
     padding-left: 9px;
     padding-top: 3px;
-} 
+}
+.btn-gmail .button-name::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 24px;
+    background-color: #af3a28;
+    margin-right: 18px;
+}  
 .btn-gmail {
     background-color: #c3412c;
     width: 169px;
@@ -169,13 +185,6 @@ header {
     padding-left: 9px;
     padding-top: 3px;
 }
-/* .gmail-logo::after {
-    content: "";
-    display: inline-block;
-    width: 1px;
-    height: 20px;
-    background-color: black;
-} */
 .lines-or {
    color: #848484;
    text-align: center;
