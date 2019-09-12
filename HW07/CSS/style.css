@@ -1,0 +1,38 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.perspective-container {
+  
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    color: #fcd000;
+        perspective: 800px;
+    transform-style: preserve-3d;
+   
+}
+.container {
+    transform: rotateX(60deg);
+}
+.animated-text {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    animation: move 30s infinite linear;
+    animation-fill-mode:both;
+}
+.text {
+    margin-top: 20px;
+}
+@keyframes move {
+    0%  {
+        transform: translate3d(0px, 800px, 0px);
+    }
+    100% {
+        transform: translate3d(0px, -800px, 0px);   
+         }    
+}
