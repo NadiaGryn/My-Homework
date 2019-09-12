@@ -1,0 +1,42 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+ }
+.navbar-flex-container {
+    display: flex;
+    background-color: #1d2124;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar-architect {
+    /* width: 7fr; */
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.navbar-architect::before {
+    content: url("../Images/Architect\ logo.png");
+    width: 27px;
+    height: 27px;
+    margin-right: 20px;
+}
+.navbar-center {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.navbar-item {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+.search-box {
+    width: 68px;
+    height: 70px;
+    background-color: white;
+}

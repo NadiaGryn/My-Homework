@@ -76,52 +76,34 @@ i {
 .row4, .row6, .row8 {
     background-color: #e3e3e3;
 }
-.tfoot-col1:hover, .tfoot-col2:hover, .tfoot-col3:hover, .tfoot-col4:hover {
+.tfoot-btn .btn-contact,.btn-standard,.btn-standard,.btn-ultimate,.btn-premium{
+    width: 192px;
+    height: 49px;
+    border-radius: 8px;
+    border: 0;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.tfoot-btn:hover {
     background-color: #dddddd;
 }
 
 .btn-contact {
-    width: 192px;
-    height: 49px;
     background-color: #484848;
-    border-radius: 8px;
     border-bottom: 5px solid #404040;
-    color: #ffffff;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
     margin: 20px auto;
 }
 .btn-standard {
-    width: 192px;
-    height: 49px;
     background-color: #89c331;
-    border-radius: 8px;
     border-bottom: 5px solid #79b027;
-    color: #ffffff;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 .btn-ultimate {
-    width: 192px;
-    height: 49px;
     background-color: #f04a56;
-    border-radius: 8px;
     border-bottom: 5px solid #df3a46;
-    color: #ffffff;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 .btn-premium {
-    width: 192px;
-    height: 49px;
     background-color: #20807c;
-    border-radius: 8px;
     border-bottom: 5px solid #16736f;
-    color: #ffffff;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
 }

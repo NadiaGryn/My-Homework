@@ -5,50 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-    <link rel="stylesheet" href="./CSS/Style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>04 HW NadiaGryn</title>
 </head>
 <body>
-    <header>
-        <p class="journey">JOURNEY</p>
-        <span class="sprite icon-calc"></span>
-        <span class="sprite icon-message"></span>
-        <span class="sprite icon-compas"></span>
-        <p class="header-right"> &nbsp;&nbsp;Welcome, 
-            <span> <a class="link-log" href="#">Log In</a></span> 
-            or 
-            <span> <a class="link-log" href="#"> Sign Up </a></span> 
-        </p>
-    </header>
-    <form class="form" action="#" method="POST">
-        <div class="form-head">
-            <div class="green-box"></div>
-            <p class="form-head-sign">Sign Up</p>
-            <a href="#" class="greenLink"> Log In </a>
-        </div>
-        <div class="btn-social">
-            <button class="btn-facebook" type="button" >
-                <img class="fb-logo" src="./Images/facebook.png" alt="Facebook" width="10px" height="20px">
-                <a class="button-name" href="#">Facebook</a>  
-            </button>
-            <button class="btn-gmail" type="button">
-                <img class="gmail-logo" src="./Images/Gmail.png" alt="Google" width="25px" height="16px">
-                <a class="button-name" href="#">Google</a>   
-            </button>
-        </div>
-        <p class="lines-or"> or </p>
-        <input class="inputText" type="text" placeholder="Name">
-        <input class="inputText" type="text" placeholder="Last Name">
-        <input class="inputText" type="password" placeholder="Choose Password">
-        <input class="inputText" type="password" placeholder="Confirm Password">
-        <div class="checkbox-container">
-            <input class="checkbox-input" type="checkbox" id="checkbox">
-            <label class="label-chkbx" for="checkbox"> Agree our <span class="terms-conditions"> <a href="#"> Terms & Conditions</a></span></label>
-        </div>
-        <input class="submit" type="submit" value="Create Account">
+    <div class="main-container">
+        <header class="header">
+            <p class="journey">JOURNEY</p>
+            <span class="sprite icon-calc"></span>
+            <span class="sprite icon-message"></span>
+            <span class="sprite icon-compas"></span>
+            <p class="header-right"> &nbsp;&nbsp;Welcome, 
+                <span> <a class="link-log" href="#">Log In</a></span> 
+                or 
+                <span> <a class="link-log" href="#"> Sign Up </a></span> 
+            </p>
+        </header>
+        <form class="form" action="#" method="POST">
+            <div class="form-head">
+                <div class="green-box"></div>
+                <p class="form-head-sign">Sign Up</p>
+                <a href="#" class="greenLink"> Log In </a>
+            </div>
+            <div class="btn-social">
+                <button class="btn-facebook" type="button" >
+                    <img class="fb-logo" src="./Images/facebook.png" alt="Facebook">
+                    <a class="button-name" href="#">Facebook</a>  
+                </button>
+                <button class="btn-gmail" type="button">
+                    <img class="gmail-logo" src="./Images/Gmail.png" alt="Google">
+                    <a class="button-name" href="#">Google</a>   
+                </button>
+            </div>
+            <p class="lines-or"> or </p>
+            <input class="input-text" type="text" placeholder="Name">
+            <input class="input-text" type="text" placeholder="Last Name">
+            <input class="input-text" type="password" placeholder="Choose Password">
+            <input class="input-text" type="password" placeholder="Confirm Password">
+            <div class="checkbox-container">
+                <input class="checkbox-input" type="checkbox" id="checkbox">
+                <label class="label-chkbx" for="checkbox"> Agree our <span class="terms-conditions"> <a href="#"> Terms & Conditions</a></span></label>
+            </div>
+            <input class="submit" type="submit" value="Create Account">
         </form>
-
+    </div>
 </body>
 </html>
 
