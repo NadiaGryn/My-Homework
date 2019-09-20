@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS_HW_03 Nadia Gryn</title>
+</head>
+ <body>
+     <!-- Функции нужны для того, чтобы один и тот же код испоьлзовать в разлиных местах сайта, стораницы, программы. 
+     Бывают встроенные и созданные под конкретную задачу. Аргументы - это переменные, которые используются в теле функции, функция с нимим работает -->
+
+
+    <script>
+        const number1 = +prompt ("Enter the 1st number");
+        const number2 = +prompt ("Enter the 2nd number");
+        const operator = prompt ("Enter operator");
+
+        function calcResult (number1, number2, operator) {
+            switch (operator) {
+                
+                case "+":
+                return number1 + number2;
+
+                case "-":
+                return number1 - number2;
+
+                case "*":
+                return number1 * number2;
+
+                case "/":
+                return number1 / number2;
+
+                default:
+                return
+            }
+        }
+
+        const result = calcResult (number1, number2, operator);
+        console.log (result);
+        
+    </script>
+ </body>
+</html>
