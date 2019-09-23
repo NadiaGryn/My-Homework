@@ -6,10 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS_HW_02 Nadia Gryn</title>
 </head>
- <!-- Циклы используются, когда нужно совершать одни и те же действия несколько раз, т.е. один и тот же код повторяется определенное количество раз. -->
+ <!-- Метод выполняет определенные действия с информацией, которая находится в объекте -->
 <body>
     <script>
-      
+
+        function createNewUser () {  
+            const newUser = {};
+
+            newUser.firstName = prompt ("Enetr your name");   //в пустом объекте newUser сохраняем значение (полученнное от юзера через prompt) в создаваемое свойтво firstName
+            newUser.lastName = prompt ("Enetr your last name"); // аналогично со свойтвом lastName
+            newUser.getLogin = function () { 
+            return this.firstName[0].toLowerCase() + this.lastName.toLowerCase();
+            };
+
+            return newUser;
+        }
+
+        let newUser = createNewUser();
+              
     </script>
  </body>
 </html>
