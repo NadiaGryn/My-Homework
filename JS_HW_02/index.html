@@ -9,8 +9,11 @@
  <!-- Циклы используются, когда нужно совершать одни и те же действия несколько раз, т.е. один и тот же код повторяется определенное количество раз. -->
 <body>
     <script>
-        const number = prompt ("Enter number, please!");
-            if (number < 5 ) {
+        let number = +prompt ("Enter number, please!");
+            while (!Number.isInteger (number) || !number) {
+                number = prompt ("Enter number again, please!");
+            }
+            if (number <= 5 ) {
                 console.log (`Sorry, no numbers`);
             }
             else {
