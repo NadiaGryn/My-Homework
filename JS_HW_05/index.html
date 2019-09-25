@@ -8,14 +8,17 @@
 </head>
 
 <body>
+
+    <!-- Экранирование необходимо для корректного отображения строки, содержащей спецсимволы  -->
+
     <script>
 
         function createNewUser () {  
             const newUser = {};
 
-            newUser.firstName = prompt ("Enetr your name");   //в пустом объекте newUser сохраняем значение (полученнное от юзера через prompt) в создаваемое свойтво firstName
-            newUser.lastName = prompt ("Enetr your last name"); // аналогично со свойтвом lastName
-            newUser.birthday = prompt ("Enetr your birthday"); 
+            newUser.firstName = prompt ("Enter your name");   //в пустом объекте newUser сохраняем значение (полученнное от юзера через prompt) в создаваемое свойтво firstName
+            newUser.lastName = prompt ("Enter your last name"); // аналогично со свойтвом lastName
+            newUser.birthday = prompt ("Enter your birthday"); 
         
             newUser.getLogin = function() { 
             return this.firstName[0].toLowerCase() + this.lastName.toLowerCase();
