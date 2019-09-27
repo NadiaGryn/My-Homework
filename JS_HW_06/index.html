@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 06 JS Nadia Gryn</title>
+</head>
+
+<body>
+    <script>
+        function filterBy(array, type) {
+
+            const newArray = [];
+            switch (type) {
+                case ("number"):
+                    array.forEach(item => {
+                            if (typeof (item) !== 'number') {
+                            newArray.push(item);
+                        }
+                    });
+                break;
+                case ("string"):
+                    array.forEach(item => {
+                        if (typeof (item) !== 'string') {
+                            newArray.push(item);
+                        }
+                    });
+                break;
+                case ("boolean"):
+                    array.forEach(item => {
+                        if (typeof (item) !== 'boolean') {
+                            newArray.push(item);
+                        }
+                    });
+                break;
+                case ("undefined"):
+                    array.forEach(item => {
+                        if (typeof (item) !== 'undefined') {
+                            newArray.push(item);
+                        }
+                    });
+                break;
+                case ("null"):
+                    array.forEach(item => {
+                        if (typeof (item) !== 'null') {
+                            newArray.push(item);
+                        }
+                    });
+
+            }
+            console.log (newArray);
+        }
+
+        filterBy([1, 2, 3, 'number', null, undefined], prompt ("Enter your data type"));
+    </script>
+</body>
+
+</html>
