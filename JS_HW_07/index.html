@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 07-JS Nadia Gryn</title>
+</head>
+<!-- 1. Опишите своими словами, как Вы понимаете, что такое Document Object Model (DOM) - 
+ Это иерархическая структура всех элементов (тегов), находящихся на странице -->\
+
+ 
+<body>
+    <main id="content"></main>
+    <script>
+        const arrayCities = ['Kiev', 'Kharkiv', 'Odessa', 'Lviv'];
+
+        function showList(items, id) {
+            let listItems = items.map(function (item) {
+                return `<li>${item}</li>`;
+            })
+            listItems = listItems.join('');
+            let list = `<ol> ${listItems} </ol>`;
+            document.getElementById(id).innerHTML = list;
+        };
+
+        showList(arrayCities, 'content');
+    </script>
+
+</body>
+
+</html>
