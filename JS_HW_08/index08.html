@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 08-JS Nadia Gryn</title>
+</head>
+
+<!-- 1. Опишите своими словами, как Вы понимаете, что такое обработчик событий. -
+         Это функция, которая позволяет отреагировать на действия, совершенные пользователем на странице-->
+
+
+
+<body>
+    <style>
+       
+        .input {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 100px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        .label {
+            margin-left: 10px;
+            color: green;
+        }
+
+        .close {
+            color: red;
+            /* position: absolute; */
+            top: 5px;
+            left: 238px;
+            font-size: 10px;
+            cursor: pointer;
+            padding: 1px;
+        }
+
+        .close:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+
+    <form action="" class="form"></form>
+        
+         <input id="input" class="input" type="number" placeholder="Enter the price, please!"> </input>
+         <label for="input" class="label">Price, $</label>
+    </form>
+
+
+
+    <script>
+        const input = document.getElementById("input");
+        input.addEventListener("focus", function () {
+            this.style.border = " 3px solid lightgreen";
+            this.style.transition = "0.3s";
+            this.style.borderRadius = "5px";
+            this.style.color = "green";
+            this.style.fontWeight = "bold";
+            const span = document.querySelector(".text");
+
+            if (span) {
+                span.remove();
+            }
+            const div = document.querySelector(".text2");
+            if (div) {
+                div.remove();
+            }
+        })
+
+        input.addEventListener("blur", function () {
+            this.style.border = '';
+            this.style.transition = "0.1s";
+
+            if (this.value <= 0) {
+                this.style.border = " 3px solid red";
+                let text2 = document.createElement(`div`);
+                text2.className = "text2";
+                text2.innerText = `Please enter correct price`;
+                this.after(text2);
+                text2.style.marginLeft = "120px";
+            } else {
+                let span = document.createElement('span');
+                span.className = "text";
+                span.innerHTML =
+                    `Current price is: <strong> ${this.value} $ </strong> <span class= "close">X</span>`;
+                span.style.display = "block";
+                span.style.marginLeft = "120px";
+                input.before(span);
+                span.addEventListener("click", function (e) {
+                    if (e.target.classList.contains("close")) {
+                        e.target.parentElement.remove();
+                    }
+                });
+            }
+        })
+    </script>
+
+</body>
+
+</html>
