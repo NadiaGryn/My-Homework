@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Homework-buttons</title>
+  <style>
+    .password-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input-wrapper {
+      position: relative;
+      width: intrinsic;
+      width: -moz-max-content;
+      width: -webkit-max-content;
+    }
+
+    .input-wrapper input {
+      min-width: 120px;
+      padding: 10px;
+      margin-bottom: 24px;
+    }
+
+    .show-input {
+      display: none;
+      min-width: 120px;
+      padding: 10px;
+      margin-bottom: 24px;
+    }
+
+    .input-wrapper i {
+      position: absolute;
+      right: 10px;
+      top: 12px;
+      color: grey;
+    }
+
+    .btn {
+      width: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <form class="password-form" action="#" type="POST">
+    <label class="input-wrapper">
+      Ввести пароль
+      <input type="password" class="input-password1" />
+      <i class="fas fa-eye icon-password" ></i>
+      <div class="show-input"></div>
+    </label>
+    <label class="input-wrapper">
+      Подтвердить пароль
+      <input type="password" class="input-password1" />
+      <i class="fas fa-eye-slash icon-password"></i>
+
+    </label>
+    <button type="submit" class="btn">Подтвердить</button>
+  </form>
+
+
+  <script>
+
+      const icons = document.querySelectorAll(".icon-password");
+
+
+      icons.forEach(icon => { 
+        icon.addEventListener("click", () => {
+          debugger;
+          const input = event.target.parentNode.childNodes[1];
+          if (input.type === "password") {
+            input.type = "text";
+            event.target.classList.replace ("fa-eye", "fa-eye-slash");
+          }
+          else {
+            input.type = "password";
+            event.target.classList.replace ("fa-eye-slash", "fa-eye");
+          }
+
+        }) 
+      }
+      );
+      const submit = document.querySelector(".btn"); // 
+      submit.addEventListener("click", () => {
+        const inputs = document.querySelectorAll("input");
+        const sorry = document.createElement ("span");
+        sorry.style.color = "red";
+        sorry.style.display = "none";
+        sorry.innerText = 'Sorry, try again';
+        inputs[1].after(sorry);
+
+        if (inputs[0].value === inputs[1].value) {
+          sorry.style.display = "none";
+          alert ("You are welcome");
+        } 
+        else {
+          sorry.style.display = "block";
+        }
+      })
+  </script>
+</body>
+
+</html>
