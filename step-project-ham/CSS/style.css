@@ -12,8 +12,6 @@
 /* Top section */
 
 .top-section-container {
-   
-    width: 100%;
     height: 1012px;
     margin: 0 auto;
     background: url("../Images/Sections background/section-1(header).jpg");
@@ -24,11 +22,13 @@
 }
 .header {
     height: 120px;
-    display: flex;
-    align-items: center;
     background-color: rgba(95, 94, 89, 0.7);
     background-blend-mode: lighten;
-    padding-left: 190px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
 }
 
 .logo-header {
@@ -51,6 +51,7 @@
     content: "";
     position: absolute;
     width: 0;
+    right: 0px;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
 }
@@ -102,7 +103,7 @@
 }
 
 .navbar-menu {
-    padding-left: 83px;
+    padding-left: 253px;
 }
 
 .nav-link {
@@ -227,10 +228,8 @@
 
 /* Our services */
 .services {
-    width: 100%;
     margin-top: 60px;
 }
-
 .h2-title {
     color: #4e4e4e;
     font-size: 36px;
@@ -240,16 +239,13 @@
     margin-bottom: 100px;
     position: relative;
 }
-
 .h2-title::before {
     content: "______";
     color: #18cfab;
     top: 15px;
     left: 505px;
     position: absolute;
-
 }
-
 .h2-title::after {
     content: "______";
     color: #18cfab;
@@ -325,7 +321,6 @@ ul.tabs {
 
 /* Section paralax */
 .ready-paralax {
-    width: 100%;
     height: 474px;
     background: url("../Images/Sections background/section-2.jpg");
     background-attachment: fixed;
@@ -667,7 +662,6 @@ ul.work-tabs {
 /* Footer */
 footer {
     background-color: #22353f;
-    width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
