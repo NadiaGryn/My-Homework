@@ -394,6 +394,7 @@ ul.work-tabs {
     width: 25%;
     position: relative;
     overflow: hidden;
+    padding: 0;
 }
 .hover-overlay {
     position: absolute;
@@ -467,6 +468,9 @@ ul.work-tabs {
     font-weight: bold;
     margin-top: 63px;
     margin-bottom: 45px; 
+}
+.hidden {
+    display: none;
 }
 
 /* Breaking News */
@@ -605,6 +609,9 @@ ul.work-tabs {
     font-weight: 300;
     line-height: 27px;
 }
+.position {
+    color: #bbbbbb;
+}
 
 .name {
     color: #18cfab;
@@ -636,7 +643,6 @@ ul.work-tabs {
     border-radius: 50%;
     box-shadow: 0 0 0 5px rgba(41, 92, 89, 0.5);
 }
-
 .prev,
 .next {
     width: 31px;
