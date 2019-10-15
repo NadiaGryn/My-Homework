@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>English breakfast exercise</title>
+</head>
+
+<body>
+    <!--   У вас есть массив строк, каждая строка - один продукт, который входит в состав английского завтрака. Напишите код, 
+        который работает так: если в состав завтрака входит больше 4х продуктов, то остальные переносятся на обед.
+ -->
+
+
+    <script>
+        const englishBreakfeast = ["поджареный бекон", "колбаски", "яичница", "жареные грибы", "жареные помидоры", "фасоль", "хлеб с джемом", "кофе"];
+        const englishDiner = [];
+        if (englishBreakfeast.length > 4) {
+            while (englishBreakfeast.length > 4) {
+                let dish = englishBreakfeast.pop();
+                englishDiner.push(dish);
+            }
+        }
+        console.log(englishBreakfeast);
+        console.log(englishDiner);
+    </script>
+
+   
+
+</body>
+
+</html>

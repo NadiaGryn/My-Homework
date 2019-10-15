@@ -1,42 +1,140 @@
-body {
-    width: 100%;
+.main-container {
+    margin: 0 auto;
+    font-family: Verdana, sans-serif;
+}
+
+.content-width {
+    max-width: 1160px;
     margin: 0 auto;
     text-align: center;
- }
-.navbar-flex-container {
+}
+
+/* ------------------Top section & header------------- */
+
+.top-section-container {
+    height: 433px;
+    margin: 0 auto;
+    background: url("../Images/header-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: hue;
+    background-position: 50% 50%;
+}
+
+.header {
+    height: 58px;
+    background-color: rgba(29, 33, 36, 1);
     display: flex;
-    background-color: #1d2124;
-    width: 100%;
     justify-content: space-around;
     align-items: center;
 }
-.navbar-architect {
-    /* width: 7fr; */
-    color: white;
+
+.header-right-side {
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
 }
-.navbar-architect::before {
+
+.logo-architect {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.logo-architect::before {
     content: url("../Images/Architect\ logo.png");
     width: 27px;
     height: 27px;
     margin-right: 20px;
 }
-.navbar-center {
+
+.header-nav-menu {
     display: flex;
     justify-content: space-evenly;
     width: 50%;
+    margin: 0 190px;
 }
+
 .navbar-item {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
 }
-.search-box {
-    width: 68px;
-    height: 70px;
-    background-color: white;
+
+.fa-search {
+    color: white;
+}
+
+.top-section-title {
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 139px;
+}
+
+.buttons {
+    text-align: center;
+    padding: 10px 15px;
+    margin: 10px 15px;
+}
+
+.btn-subscribe,
+.btn-articles {
+    padding: 10px 15px;
+    margin: 10px 15px;
+    width: 170px;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #89ca62;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-articles {
+    background-color: #14b9d5;
+}
+
+/* -----------------------Most popular posts----------------- */
+
+.popular-posts {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding-top: 61px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-posts-title {
+    color: #18b4cf;
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.popular-posts-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1130px;
+}
+.popular-posts-flex-item{
+    margin: 15px;
+}
+.popular-posts-img {
+    width: 370px;
+}
+.popular-posts-text{
+    height: 50px;
+    background-color: #ffffff;
+    color: #424649;
+    width: 370px;
+    padding-top: 20px;
+    background-color: rgb(255, 0, 0,); 
 }
